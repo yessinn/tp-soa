@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cinema nom="CineCarthage">
+    <films>
+        <film id="F001" statut="affiche">
+            <titre>Inception</titre>
+            <realisateur>Christopher Nolan</realisateur>
+            <genre>Science-fiction</genre>
+            <annee>2010</annee>
+            <duree>148</duree>
+            <note>8.8</note>
+        </film>
+        <film id="F002" statut="affiche">
+            <titre>Le Fabuleux Destin d'Amélie Poulain</titre>
+            <realisateur>Jean-Pierre Jeunet</realisateur>
+            <genre>Comédie</genre>
+            <annee>2001</annee>
+            <duree>122</duree>
+            <note>8.3</note>
+        </film>
+        <film id="F003" statut="affiche">
+            <titre>Interstellar</titre>
+            <realisateur>Christopher Nolan</realisateur>
+            <genre>Science-fiction</genre>
+            <annee>2014</annee>
+            <duree>169</duree>
+            <note>8.7</note>
+        </film>
+        <film id="F004" statut="affiche">
+            <titre>Parasite</titre>
+            <realisateur>Bong Joon-ho</realisateur>
+            <genre>Thriller</genre>
+            <annee>2019</annee>
+            <duree>132</duree>
+            <note>8.5</note>
+        </film>
+        <film id="F005" statut="prochainement">
+            <titre>Dune : Deuxième partie</titre>
+            <realisateur>Denis Villeneuve</realisateur>
+            <genre>Science-fiction</genre>
+            <annee>2024</annee>
+            <duree>166</duree>
+            <note>8.6</note>
+        </film>
+    </films>
+
+    <salles>
+        <salle id="S1"><nom>Salle Tanit</nom><capacite>120</capacite></salle>
+        <salle id="S2"><nom>Salle Elissa</nom><capacite>80</capacite></salle>
+    </salles>
+
+    <utilisateurs>
+        <utilisateur id="U001" actif="true">
+            <nom>Amine Ben Salah</nom>
+            <email>amine.bensalah@example.com</email>
+            <dateInscription>2024-03-12</dateInscription>
+        </utilisateur>
+        <utilisateur id="U002" actif="false">
+            <nom>Sana Trabelsi</nom>
+            <email>sana.trabelsi@example.com</email>
+            <dateInscription>2023-11-02</dateInscription>
+        </utilisateur>
+        <utilisateur id="U003" actif="true">
+            <nom>Yassine Gharbi</nom>
+            <email>yassine.gharbi@example.com</email>
+            <dateInscription>2025-01-20</dateInscription>
+        </utilisateur>
+    </utilisateurs>
+
+    <seances>
+        <seance id="SE01" filmRef="F001" salleRef="S1" promotion="true">
+            <dateHeure>2026-10-20T18:00:00</dateHeure>
+            <prix devise="TND">9.5</prix>
+        </seance>
+        <seance id="SE02" filmRef="F002" salleRef="S2" promotion="false">
+            <dateHeure>2026-10-20T20:30:00</dateHeure>
+            <prix devise="TND">14.0</prix>
+        </seance>
+        <seance id="SE03" filmRef="F003" salleRef="S1" promotion="true">
+            <dateHeure>2026-10-21T21:00:00</dateHeure>
+            <prix devise="TND">10.0</prix>
+        </seance>
+        <seance id="SE04" filmRef="F004" salleRef="S2" promotion="false">
+            <dateHeure>2026-10-22T19:00:00</dateHeure>
+            <prix devise="TND">15.0</prix>
+        </seance>
+    </seances>
+</cinema>
